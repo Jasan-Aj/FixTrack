@@ -18,7 +18,7 @@ function decodeToken(token: string): { role?: string; sub?: string } | null {
   }
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Skip public routes
